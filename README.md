@@ -30,5 +30,15 @@
 | ------ | ------ |
 | Основы гит | https://git-scm.com/book/ru/v2/Основы-Git-Работа-с-удалёнными-репозиториями |
 | Ветвление | https://git-scm.com/book/ru/v2/Ветвление-в-Git-О-ветвлении-в-двух-словах |
+## Добавляем файл гитигнор в нем прописываем директорию tmp/
+```
+vim .gitignore
+touch ignored_file file_for_ignore another-ignored-file
+git add -A
+git log
+git status
+git show
+git push origin
+```
 
 ![Картиночка](https://as2.ftcdn.net/v2/jpg/03/37/00/59/1000_F_337005995_hRjUA4xXUTbTgeJ0FchilPBITj3FxVHU.jpg "Картинка для просмотра при проверке")
