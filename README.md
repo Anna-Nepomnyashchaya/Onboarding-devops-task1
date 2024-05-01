@@ -40,5 +40,27 @@ git status
 git show
 git push origin
 ```
+## Задание 5, 6. Работа с ветками.
+Документация не требуется, ветки на гитлабе
+
+## Задание 7. Решение конфликтов слияния.
+```
+git clone git@gitlab.wildberries.ru:ilin-leonid/git-merge.git
+git branch -a
+git checkout origin/feature
+git checkout feature
+git log
+git checkout origin/develop
+git checkout develop
+git log
+git merge feature
+git add .
+git commit -m "Merge branch 'feature' into develop"
+git switch main
+git merge develop
+git add .
+git commit -m "Merge branch 'develop' into 'main' and resolved conflict"
+git log --graph --pretty=oneline --abbrev-commit --all --decorate
+```
 
 ![Картиночка](https://as2.ftcdn.net/v2/jpg/03/37/00/59/1000_F_337005995_hRjUA4xXUTbTgeJ0FchilPBITj3FxVHU.jpg "Картинка для просмотра при проверке")
