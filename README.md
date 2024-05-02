@@ -62,5 +62,28 @@ git add .
 git commit -m "Merge branch 'develop' into 'main' and resolved conflict"
 git log --graph --pretty=oneline --abbrev-commit --all --decorate
 ```
+## Задание 9. cherry-pick
+```
+git clone git@gitlab.wildberries.ru:ilin-leonid/git-cherry-pick.git
+git branch -a
+git checkout origin/develop
+git switch develop
+git switch master
+git cherry-pick 17938b2b85023f5863e664b49c76a6b04b4c7149
+```
+
+##Задание 10. Склеить 6 комитов в 1 комит и запушить.
+```
+git clone git@gitlab.wildberries.ru:ilin-leonid/git-squash.git
+git branch -a
+git checkout origin/develop
+git switch develop
+git checkout origin/show
+git switch show
+git remote rename origin old-origin
+git rebase -i HEAD~6
+git push --force origin develop
+git log
+```
 
 ![Картиночка](https://as2.ftcdn.net/v2/jpg/03/37/00/59/1000_F_337005995_hRjUA4xXUTbTgeJ0FchilPBITj3FxVHU.jpg "Картинка для просмотра при проверке")
